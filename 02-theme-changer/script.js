@@ -1,5 +1,5 @@
-const chngBtn = document.querySelector(".btn");
+const themeToggleBtn = document.querySelector(".themeToggleBtn");
 
-chngBtn.addEventListener("click",()=>{
+themeToggleBtn.addEventListener("click",()=>{
     document.body.classList.toggle("dark")
 })

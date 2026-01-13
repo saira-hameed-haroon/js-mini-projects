@@ -1,9 +1,9 @@
-const search = document.querySelector(".search");
-const item = document.querySelectorAll(".item");
+const searchInput = document.querySelector(".searchInput");
+const items = document.querySelectorAll(".item");
 
-search.addEventListener("input", ()=>{
-    const value = search.value.toLowerCase();
-    item.forEach((item) =>{
+searchInput.addEventListener("input", ()=>{
+    const value = searchInput.value.toLowerCase();
+    items.forEach((item) =>{
         item.style.display = item.innerText.toLowerCase().includes(value) ? "block" : "none";
     })
 })

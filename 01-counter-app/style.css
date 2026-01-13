@@ -17,7 +17,7 @@
      background: linear-gradient(to top, var(--primary), var(--secolor));
  }
 
- .cont {
+ .container {
      width: 30vw;
      margin: 62px auto;
      padding: 40px;

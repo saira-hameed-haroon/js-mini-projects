@@ -1,14 +1,14 @@
-const pass = document.querySelector(".inp");
-const btn = document.querySelector(".btn");
+const passwordInput = document.querySelector(".passwordInput");
+const passwordToggleBtn = document.querySelector(".passwordToggleBtn");
 
-btn.addEventListener("click", ()=>{
-    if(pass.type == "password")
+passwordToggleBtn.addEventListener("click", ()=>{
+    if(passwordInput.type == "password")
     {
-        pass.type = "text";
-        btn.innerText = "Hide";
+        passwordInput.type = "text";
+        passwordToggleBtn.innerText = "Hide";
     }
     else{
-        pass.type = "password";
-        btn.innerText = "Show";
+        passwordInput.type = "password";
+        passwordToggleBtn.innerText = "Show";
     }
 })

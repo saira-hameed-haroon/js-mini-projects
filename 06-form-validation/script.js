@@ -1,11 +1,11 @@
 const form = document.querySelector(".form");
-const input = document.querySelector(".inp");
+const nameInput = document.querySelector(".nameInput");
 const msg = document.querySelector(".msg");
 
 form.addEventListener("submit", (e)=>{
     e.preventDefault();
 
-    if(input.value == "")
+    if(nameInput.value == "")
     {
         msg.innerText = "Name is required";
     }

@@ -1,13 +1,13 @@
-const input = document.querySelector(".inp");
-const btn = document.querySelector(".btn");
-const display = document.querySelector(".display");
-const reset = document.querySelector(".reset");
+const bgColorInput = document.querySelector(".bgColorInput");
+const bgColorBtn = document.querySelector(".bgColorBtn");
+const colorDisplay = document.querySelector(".colorDisplay");
+const resetBtn = document.querySelector(".resetBtn");
 
-btn.addEventListener("click",()=>{
-    document.body.style.backgroundColor = input.value;
-    display.innerText = `Current Color is : ${input.value}`;
+bgColorBtn.addEventListener("click",()=>{
+    document.body.style.backgroundColor = bgColorInput.value;
+    colorDisplay.innerText = `Current Color is : ${bgColorInput.value}`;
 })
-reset.addEventListener("click", ()=>{
+resetBtn.addEventListener("click", ()=>{
     document.body.style.backgroundColor = "";
-    display.innerText="";
+    colorDisplay.innerText="";
 })

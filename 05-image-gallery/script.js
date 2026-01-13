@@ -1,13 +1,13 @@
-const main = document.querySelector(".main");
-const thumb = document.querySelectorAll(".thumb");
-const reset = document.querySelector(".reset");
-const defaultImg = main.src;
+const mainImg = document.querySelector(".mainImg");
+const thumbs = document.querySelectorAll(".thumb");
+const resetBtn = document.querySelector(".resetBtn");
+const defaultImg = mainImg.src;
 
-thumb.forEach((img)=>{
+thumbs.forEach((img)=>{
     img.addEventListener("click", ()=>{
-        main.src = img.src;
+        mainImg.src = img.src;
     })
 })
-reset.addEventListener("click",()=>{
-    main.src = defaultImg;
+resetBtn.addEventListener("click",()=>{
+    mainImg.src = defaultImg;
 })
