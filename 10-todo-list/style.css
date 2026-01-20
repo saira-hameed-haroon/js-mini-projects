@@ -1,0 +1,111 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+
+ :root {
+     --primary: #30cfd0;
+     --secolor: #330867;
+ }
+
+ body {
+     min-height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background: linear-gradient(to top, var(--primary), var(--secolor));
+ }
+
+ h2 {
+     text-align: center;
+     margin-bottom: 10px;
+     color: rgb(29, 28, 28);
+ }
+
+ .container {
+     width: 100%;
+     max-width: 400px;
+     padding: 20px;
+     background: white;
+     padding: 20px;
+     border-radius: 8px;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+ }
+
+ /* Input field and Add Task button: common properties */
+ .taskInput, .addTaskBtn {
+     width: 100%;
+     padding: 10px;
+     font-size: 16px;
+ }
+
+ .taskInput {
+     margin-bottom: 10px;
+ }
+
+ .addTaskBtn {
+     background: #2aaeae;
+     border: none;
+     color: white;
+     cursor: pointer;
+     border-radius: 4px;
+ }
+
+ .errorMsg {
+     color: red;
+     font-size: 14px;
+     margin: 8px 0;
+ }
+
+ .taskList {
+     list-style: none;
+     padding: 0;
+     margin-top: 15px;
+     max-height: 300px;
+     overflow-y: auto;
+     padding: 10px;
+ }
+
+ /* Individual task */
+ .taskList li {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 10px;
+     margin-bottom: 8px;
+     background: #f1f1f1;
+     border-radius: 4px;
+     cursor: grab;
+ }
+
+ .taskList li:active {
+     cursor: grabbing;
+ }
+
+ /* Task text */
+ .taskList li span {
+     flex: 1;
+ }
+
+ /* Delete button */
+ .taskList li button {
+     background: red;
+     border: none;
+     color: white;
+     padding: 5px 8px;
+     cursor: pointer;
+     border-radius: 4px;
+ }
+
+ .taskList li button:hover {
+     background: rgb(216, 30, 30);
+ }
+
+ @media (max-width: 600px) {
+     .container {
+         width: 90%;
+         padding: 15px;
+     }
+ }

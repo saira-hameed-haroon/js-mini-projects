@@ -1,11 +1,25 @@
 # To-Do List App
 
-This project is a simple to-do list application to manage daily tasks efficiently.
+A simple to-do list web application built using HTML, CSS, and JavaScript.
 
-Features planned:
+## Features
 - Add new tasks
-- Mark tasks as completed
 - Delete tasks
-- Save tasks using local storage
+- Drag and drop tasks to reorder
+- Tasks are saved using localStorage (data persists after refresh)
 
-⏳ Coming soon. Will be updated.
+## Technologies Used
+- HTML
+- CSS
+- JavaScript (DOM manipulation, Events, Drag & Drop, localStorage)
+- JSON
+
+## What I Learned
+- DOM manipulation
+- Event handling
+- Drag and drop functionality
+- Using localStorage with JSON.stringify and JSON.parse
+- Basic responsive layout using a media query
+
+## How to Run
+Open the `index.html` file in any modern web browser.
