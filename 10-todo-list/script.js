@@ -1,18 +1,34 @@
-const taskInput = document.querySelector(".taskInput");
+const taskInput = document.getElementById("taskInput");
 const addTaskBtn = document.querySelector(".addTaskBtn");
 const errorMsg = document.querySelector(".errorMsg");
 const taskList = document.querySelector(".taskList");
 
 // Create a new task item 
-function createTask(taskText) {
+function createTask(taskText, completed = false) {
     const li = document.createElement("li");
     const span = document.createElement("span");
     span.innerText = taskText;
+    if (completed) {
+        span.classList.add("completed");
+    }
+
+    // Create complete button for each task
+    const completeTaskBtn = document.createElement("button");
+    completeTaskBtn.innerText = "✔";
+    completeTaskBtn.classList.add("complete-btn");
+    completeTaskBtn.setAttribute("aria-label", "Mark task as completed");
+
+    // Mark task as completed
+    completeTaskBtn.addEventListener("click", () => {
+        span.classList.toggle("completed");
+        saveTasts();
+    })
 
     // Create delete button for each task 
     const deleteBtn = document.createElement("button");
-    deleteBtn.innerText = " X";
-    deleteBtn.setAttribute("aria-label", "Delete Task");
+    deleteBtn.innerText = "✖";
+    deleteBtn.classList.add("delete-btn");
+    deleteBtn.setAttribute("aria-label", "Delete task");
 
     // Remove task on delete 
     deleteBtn.addEventListener("click", () => {
@@ -21,6 +37,7 @@ function createTask(taskText) {
     });
 
     li.appendChild(span);
+    li.appendChild(completeTaskBtn);
     li.appendChild(deleteBtn);
     // Enable drag and drop for task 
     makeDraggable(li);
@@ -69,7 +86,10 @@ function makeDraggable(li) {
 function saveTasts() {
     const tasks = [];
     document.querySelectorAll("li span").forEach(span => {
-        tasks.push(span.innerText);
+        tasks.push({
+            text: span.innerText,
+            completed: span.classList.contains("completed")
+        });
     });
     localStorage.setItem("tasks", JSON.stringify(tasks));
 }
@@ -78,5 +98,5 @@ function saveTasts() {
 window.addEventListener("load", loadTasks);
 function loadTasks() {
     const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
-    tasks.forEach(task => createTask(task));
+    tasks.forEach(task => createTask(task.text, task.completed));
 }

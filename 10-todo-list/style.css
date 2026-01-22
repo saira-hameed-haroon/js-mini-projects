@@ -35,13 +35,14 @@
  }
 
  /* Input field and Add Task button: common properties */
- .taskInput, .addTaskBtn {
+ #taskInput,
+ .addTaskBtn {
      width: 100%;
      padding: 10px;
      font-size: 16px;
  }
 
- .taskInput {
+ #taskInput {
      margin-bottom: 10px;
  }
 
@@ -61,7 +62,6 @@
 
  .taskList {
      list-style: none;
-     padding: 0;
      margin-top: 15px;
      max-height: 300px;
      overflow-y: auto;
@@ -73,7 +73,8 @@
      display: flex;
      justify-content: space-between;
      align-items: center;
-     padding: 10px;
+     padding: 10px 12px;
+     gap: 18px;
      margin-bottom: 8px;
      background: #f1f1f1;
      border-radius: 4px;
@@ -89,9 +90,8 @@
      flex: 1;
  }
 
- /* Delete button */
+ /* Base button styling */
  .taskList li button {
-     background: red;
      border: none;
      color: white;
      padding: 5px 8px;
@@ -99,7 +99,23 @@
      border-radius: 4px;
  }
 
- .taskList li button:hover {
+ /* Complete button */
+ .complete-btn {
+     background-color: green;
+ }
+
+ /* Delete button */
+ .delete-btn {
+     background-color: red;
+ }
+
+ /* Mark task as completed */
+ .completed {
+     text-decoration: line-through;
+     opacity: 0.6;
+ }
+
+ .taskList li .delete-btn:hover {
      background: rgb(216, 30, 30);
  }
 

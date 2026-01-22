@@ -5,8 +5,9 @@ A simple to-do list web application built using HTML, CSS, and JavaScript.
 ## Features
 - Add new tasks
 - Delete tasks
+- Mark tasks as complete (with strike-through effect)
 - Drag and drop tasks to reorder
-- Tasks are saved using localStorage (data persists after refresh)
+- Tasks are saved using localStorage (including completion status)
 
 ## Technologies Used
 - HTML
@@ -19,6 +20,8 @@ A simple to-do list web application built using HTML, CSS, and JavaScript.
 - Event handling
 - Drag and drop functionality
 - Using localStorage with JSON.stringify and JSON.parse
+- Managing state for individual items (toggling completion)
+- Dynamic CSS styling (applying classes for strike-through text)
 - Basic responsive layout using a media query
 
 ## How to Run
