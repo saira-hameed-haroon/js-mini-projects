@@ -9,7 +9,7 @@ function createTask(taskText, completed = false) {
     const span = document.createElement("span");
     span.innerText = taskText;
     if (completed) {
-        span.classList.add("completed");
+        li.classList.add("completed");
     }
 
     // Create complete button for each task
@@ -20,7 +20,7 @@ function createTask(taskText, completed = false) {
 
     // Mark task as completed
     completeTaskBtn.addEventListener("click", () => {
-        span.classList.toggle("completed");
+        li.classList.toggle("completed");
         saveTasts();
     })
 
