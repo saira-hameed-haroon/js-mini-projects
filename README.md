@@ -17,7 +17,7 @@ Projects are **numbered in the order they were created**, showing the progressio
 8. **08-countdown-timer** – Countdown timer with user input. ⏰  
 9. **09-calculator** – Basic calculator performing arithmetic operations. ➕➖✖️➗  
 10. **10-todo-list** – To-do list with drag-and-drop functionality. ✅   
-11. **11-weather-app** – Weather app using API to fetch real-time data. 🌐 *(coming soon)*  
+11. **11-weather-app** – Weather app using API to fetch real-time data. 🌐 ✅
 
 ---
 
@@ -33,7 +33,7 @@ Each project contains:
 ## Notes
 
 - Projects 10 (To-Do List) is completed.
-- Project 11 (Weather App) is **under development** and will be updated soon.  
+- Project 11 (Weather App) is completed.  
 - All projects are aimed at **strengthening my front-end development skills**, and later I will integrate them into **full-stack applications with backend and APIs**.  
 - This repository is part of my journey toward becoming a **Full-Stack ML Engineer**.  
 
