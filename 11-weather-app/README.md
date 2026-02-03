@@ -22,7 +22,7 @@ Fetches real-time weather data from the **OpenWeatherMap API**.
 To get this app running, you will need an `API key` from OpenWeatherMap:
 
 1. Sign up at OpenWeatherMap.
-2. Generate your free API key.
+2. Generate your free API key.=
 3. Open `script.js` and replace the placeholder text with your `actual API Key`.
 
 ## How to Run

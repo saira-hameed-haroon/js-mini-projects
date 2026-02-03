@@ -6,6 +6,11 @@ body {
   background: linear-gradient(135deg, #667eea, #764ba2);
 }
 
+/* Fix mobile viewport height */
+.full-height {
+  min-height: 100vh;  /* fallback for older browsers */
+  min-height: 100dvh; /* stable height on mobile */
+}
 /* Weather card styling */
 .weather-card {
   width: 100%;
