@@ -10,7 +10,7 @@ const windSpeed = document.getElementById("windSpeed");
 const errorMsg = document.getElementById("errorMsg");
 
 // API key
-const API_KEY = "YOUR_API_KEY_HERE";
+const API_KEY = "2b8d3e6758d6fa8c1d83f2145759c2a5";
 
 // Event listener for button click
 btn.addEventListener("click", getWeather);
